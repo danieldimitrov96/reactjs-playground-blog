@@ -4,8 +4,9 @@ import { Redirect, Link } from 'react-router-dom'
 import Aux from './../../hoc/Aux/Aux'
 
 const blogShortened = (props) => (
-    <article className="Post" onClick={props.clicked}>
-        <Link to={'/blog/' + props.id} key={props.id}>
+    <article className="Post">
+        <Link to={`/blog/${props.id}?title=${props.title}`} key={props.id}>
+            <h1>TODO: Redux and Add component</h1>
             <h1>Tittle</h1>
        </Link>
         <div>{props.title}</div>

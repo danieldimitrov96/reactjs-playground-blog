@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom'
 import BlogShortened from '../../components/BlogShortened/BlogShortened';
 import { updateObject } from './../../shared/utility';
 
-
 class BlogsList  extends Component{
     constructor(props) {
         super(props);
@@ -62,7 +61,6 @@ class BlogsList  extends Component{
                     hideMore={this.hideMore}/>
             );
         } );
-
         return (
             <div>
                 <section className="Posts">
